@@ -1,6 +1,11 @@
 import random
 
-def generatePassword(size, haveSpecial):
+def generatePassword(size: int, haveSpecial: bool):
+    """
+    That module can generate a new password.
+    size: int (number of characters the password must have)
+    haveSpecial: bool (whether the generated password can contain special characters)
+    """
     
     alphabetUppercase = "ABCDEFGHJKLMNOPQRSTUVWXYZ"
     alphabet = "abcdefghjklmnopqrstuvwxyz"
@@ -20,5 +25,3 @@ def generatePassword(size, haveSpecial):
             newPassword += random.choice(typeChar)
             
     return newPassword
-
-print(generatePassword(16, False))
