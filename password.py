@@ -25,3 +25,7 @@ def generatePassword(size: int, haveSpecial: bool):
             newPassword += random.choice(typeChar)
             
     return newPassword
+
+if __name__ == "__main__":
+    print(generatePassword(16, True))
+    
